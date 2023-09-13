@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 최현우 / 코어 6기 / 안산 / 응
 - 리뷰어 : 강임구 / 코어 6기 / 대전 / 응
@@ -148,3 +149,7 @@ for 와 길이 계산된 변수 이용하여 반복을 하는게 아닌 while로
 
 
 # 참고 링크 및 코드 개선
+=======
+# first-Quest
+## git config
+>>>>>>> d755567a3345fe272280e8ac365f956da7b11264
