@@ -153,3 +153,4 @@ for 와 길이 계산된 변수 이용하여 반복을 하는게 아닌 while로
 # first-Quest
 ## git config
 >>>>>>> d755567a3345fe272280e8ac365f956da7b11264
+practice
