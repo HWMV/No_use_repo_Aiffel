@@ -3,9 +3,9 @@
 # AIFFEL Online Core 6기 최현우
 
 ## Flow Chart
-<Flow Chart IMAGE>
+<시간이 없어 로컬 이미지 올리는 법을 못 찾았습니다! 깃헙에 링크로 올리겠습니다>
  
-<img src="https://github.com/HWMV/AIFFEL_Quest1/blob/master/Main_quest/Main_quest4/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-11-09%20%EC%98%A4%ED%9B%84%205.06.39.png", height="100x", width="100px">
+[Flow Chart IMAGE]("https://github.com/HWMV/AIFFEL_Quest1/blob/master/Main_quest/Main_quest4/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-11-09%20%EC%98%A4%ED%9B%84%205.06.39.png")
 
 
 ---
