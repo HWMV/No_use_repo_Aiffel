@@ -48,24 +48,26 @@ BATCH_SIZE = 4 공통 적용
   
 # 6. Test 06
 
-* 위와 동일 Data 증강 넣고 Dense unit 32 > 1000 증가
-* 성능 저하 : Acc : 91.25% > 76%
+* 위와 동일 Data 증강 빼고 Dense layer unit 32 > 1000 증가
+* 성능 저하 : Acc : 82.5% > 76%
 
 # Test Final
 
 * LrS 지수함수 변경 (0.0001 부근에서 성능이 좋아 그 부분에서 점점 감소하게 설정)
 * Fine Tune 상위 레이어 20개(Domain feature 추출)
 * 데이터셋 비율 변경
+* Loss : 0.30 , Acc : 0.9125
 
 # 전체 수정 과정
 
 1. acc, loss가 일정치를 못 넘고 수렴 (과적합은 X)
 2. 학습을 더 잘 진행할 수 있도록 lr 조절
 3. 내 데이터에서 저소자 수준의 데이터 추출하기 위해 Fine_Tune
-4. model ResNet50 > ResNet50V2 변경 (같은 조건일 때 영향이 가장 큼) 25% 차이
-5. Data 증강 (유무로 데이터 영향도 큼 확인) 15% 차이
+4. model ResNet50 > ResNet50V2 변경 (같은 조건일 때 영향이 가장 큼) 25% 차이 - ResNet50(56%) > ResNet50V2(82.5%)
+5. Data 증강 (유무로 데이터 영향도 큼 확인) 15% 차이 - ResNet50V2(acc : 91.25 > 76%)
 6. validation 학습을 위해 데이터 비율 조절 (65:15:20)
-7. Domain feature 추출 위해 Fine Tune, Lrs 000.1 부근에서 validation 및 train 학습 잘됨을 확인. 스케쥴러로 0.0001 인근에서 점차 감소하게 지수 함수 설정
+7. Domain feature 추출 위해 Fine Tune (상위 레이어 20개)
+8. Lrs 0.0001 부근에서 validation 및 train 학습 잘됨을 확인. 스케쥴러로 0.0001 인근에서 점차 감소하게 지수 함수 설정
 
 # pre-trained model 영향 순위
   1. 적절한 모델을 사용하기
@@ -73,4 +75,3 @@ BATCH_SIZE = 4 공통 적용
   3. Fine_Tune
   4. LrS 조절
   5. earlystopping, epoch 조절
-  6. earlystopping, epoch 조절
